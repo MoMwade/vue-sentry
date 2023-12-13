@@ -3,11 +3,19 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <div @click="fn()">1111</div>
+      <div>1111</div>
     </nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+  export default {
+    methods: {
+      fn(){}
+    }
+  }
+</script>
 
 <style>
 #app {
