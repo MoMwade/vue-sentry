@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <div @click="fn()"></div>
+      <div @click="fn()">1111</div>
     </nav>
     <router-view/>
   </div>
