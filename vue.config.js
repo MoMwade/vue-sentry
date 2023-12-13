@@ -2,8 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 const { sentryWebpackPlugin } = require("@sentry/webpack-plugin");
 module.exports = defineConfig({
   transpileDependencies: true,
-  configureWebpack: {
-    devtool: "source-map", // Source map generation must be turned on
+  devtool: "source-map", // Source map generation must be turned on
     plugins: [
       sentryWebpackPlugin({
         org: Wade,
@@ -12,5 +11,4 @@ module.exports = defineConfig({
         authToken: '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',
       }),
     ],
-  }
 })
