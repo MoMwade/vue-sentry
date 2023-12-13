@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <div>1111</div>
+      <div @click="fn()">1111</div>
     </nav>
     <router-view/>
   </div>
@@ -12,7 +12,7 @@
 <script>
   export default {
     methods: {
-      fn(){}
+      
     }
   }
 </script>
